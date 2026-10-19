@@ -626,6 +626,9 @@ class ExampleRobolectricTest {
     composeTestRule.waitForIdle()
     composeTestRule.onNodeWithTag("builder_code_panel").assertExists()
     composeTestRule.onNodeWithTag("builder_file_tree").assertExists()
+    composeTestRule
+      .onNodeWithTag("builder_file_tree")
+      .performScrollToNode(hasTestTag("builder_file_item_index.html"))
     composeTestRule.onNodeWithTag("builder_file_item_index.html").assertExists()
 
     // Trigger project validation and ZIP export
@@ -870,6 +873,9 @@ class ExampleRobolectricTest {
     composeTestRule.onNodeWithTag("tab_openai").assertIsDisplayed()
     composeTestRule.onNodeWithTag("ai_settings_api_key_input").assertExists()
     composeTestRule.onNodeWithTag("ai_settings_model_input").assertExists()
+    composeTestRule
+      .onNodeWithTag("baso_ai_settings_screen")
+      .performScrollToNode(hasTestTag("failover_toggle_switch"))
     composeTestRule.onNodeWithTag("failover_toggle_switch").assertExists()
 
     // Switch to OpenAI tab

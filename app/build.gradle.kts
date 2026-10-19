@@ -62,6 +62,9 @@ android {
     buildConfig = true
   }
   testOptions { unitTests { isIncludeAndroidResources = true } }
+  tasks.withType<Test> {
+    maxHeapSize = "2g"
+  }
   dependenciesInfo {
     includeInApk = false
     includeInBundle = true
