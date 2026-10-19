@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="baso_bg_primary">#FF05090F</color>
+    <color name="baso_bg_secondary">#FF0B1420</color>
+    <color name="baso_surface_card">#FF111E2B</color>
+    <color name="baso_neon_yellow">#FFFFD400</color>
+    <color name="baso_neon_turquoise">#FF00F5D4</color>
+    <color name="baso_text_primary">#FFF5F7FA</color>
+    <color name="baso_text_secondary">#FF9BAAB8</color>
+    <color name="baso_border">#FF243747</color>
+    <color name="baso_success">#FF37D99A</color>
+    <color name="baso_error">#FFFF5B68</color>
+    <color name="black">#FF05090F</color>
+    <color name="white">#FFF5F7FA</color>
+</resources>

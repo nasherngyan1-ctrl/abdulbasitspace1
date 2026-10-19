@@ -1,0 +1,6 @@
+{
+  "name": "BASO",
+  "description": "Kurdish-first minimalist everyday utility and organization hub with a deep-black, neon-yellow, and neon-turquoise design system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

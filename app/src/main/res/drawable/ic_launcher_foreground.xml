@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Subtle inner card surface -->
+    <path
+        android:fillColor="#FF111E2B"
+        android:pathData="M34,30h40c2.2,0 4,1.8 4,4v40c0,2.2 -1.8,4 -4,4H34c-2.2,0 -4,-1.8 -4,-4V34c0,-2.2 1.8,-4 4,-4z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FF243747" />
+    <!-- Bold geometric B / emblem in Neon Yellow (#FFD400) -->
+    <path
+        android:fillColor="#FFFFD400"
+        android:pathData="M41,39h15c5.5,0 9.5,3.4 9.5,8.2c0,3.2 -1.8,5.7 -4.6,6.8c3.4,1.1 5.6,3.9 5.6,7.6c0,5.3 -4.3,8.9 -10.3,8.9H41V39zM47.5,51.5h7.2c2.5,0 4.2,-1.4 4.2,-3.5c0,-2.1 -1.7,-3.5 -4.2,-3.5h-7.2V51.5zM47.5,65h8.2c2.8,0 4.6,-1.5 4.6,-3.9c0,-2.4 -1.8,-3.9 -4.6,-3.9h-8.2V65z" />
+    <!-- Neon Turquoise (#00F5D4) active spark dot -->
+    <path
+        android:fillColor="#FF00F5D4"
+        android:pathData="M68,38m-3.5,0a3.5,3.5 0,1 1,7 0a3.5,3.5 0,1 1,-7 0" />
+</vector>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BASO</string>
+    <string name="baso_tagline_ckb">سیستەمی دیزاینی سادە و مۆدێرن بە زمانی کوردی</string>
+    <string name="baso_nav_home_ckb">سەرەتا</string>
+    <string name="baso_nav_components_ckb">پێکهاتەکان</string>
+    <string name="baso_nav_settings_ckb">ڕێکخستن</string>
+    <string name="baso_cta_primary_ckb">کرداری سەرەکی</string>
+    <string name="baso_cta_secondary_ckb">کرداری لاوەکی</string>
+    <string name="baso_search_hint_ckb">گەڕان لە بەشەکان و تێبینییەکان...</string>
+</resources>
