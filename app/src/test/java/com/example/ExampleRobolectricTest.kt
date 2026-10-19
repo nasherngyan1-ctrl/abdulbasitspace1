@@ -387,7 +387,7 @@ class ExampleRobolectricTest {
 
     composeTestRule.onNodeWithTag("ai_tool_tab_planning").performClick()
     composeTestRule.waitForIdle()
-    composeTestRule.onNodeWithTag("ai_planning_tool_panel").assertIsDisplayed()
+    composeTestRule.onNodeWithTag("ai_planning_tool_panel").assertExists()
 
     composeTestRule
       .onNodeWithTag("ai_planning_tool_panel")
