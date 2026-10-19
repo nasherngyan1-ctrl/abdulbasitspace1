@@ -61,9 +61,14 @@ android {
     compose = true
     buildConfig = true
   }
-  testOptions { unitTests { isIncludeAndroidResources = true } }
-  tasks.withType<Test> {
-    maxHeapSize = "2g"
+  testOptions {
+    unitTests {
+      isIncludeAndroidResources = true
+      all {
+        it.maxHeapSize = "3g"
+        it.jvmArgs("-XX:+UseG1GC", "-XX:MaxMetaspaceSize=1024m")
+      }
+    }
   }
   dependenciesInfo {
     includeInApk = false
