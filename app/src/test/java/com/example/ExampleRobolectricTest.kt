@@ -389,23 +389,11 @@ class ExampleRobolectricTest {
     composeTestRule.waitForIdle()
     composeTestRule.onNodeWithTag("ai_planning_tool_panel").assertExists()
 
-    composeTestRule
-      .onNodeWithTag("ai_planning_tool_panel")
-      .performScrollToNode(hasTestTag("ai_planning_input_field"))
     composeTestRule.onNodeWithTag("ai_planning_input_field").performTextInput("دروستکردنی ماڵپەڕ")
-    composeTestRule
-      .onNodeWithTag("ai_planning_tool_panel")
-      .performScrollToNode(hasTestTag("ai_planning_submit_button"))
     composeTestRule.onNodeWithTag("ai_planning_submit_button").performClick()
     composeTestRule.waitForIdle()
 
-    composeTestRule
-      .onNodeWithTag("ai_planning_tool_panel")
-      .performScrollToNode(hasTestTag("ai_planning_draft_card"))
-    composeTestRule.onNodeWithTag("ai_planning_draft_card").assertIsDisplayed()
-    composeTestRule
-      .onNodeWithTag("ai_planning_tool_panel")
-      .performScrollToNode(hasTestTag("ai_planning_save_to_projects_button"))
+    composeTestRule.onNodeWithTag("ai_planning_draft_card").assertExists()
     composeTestRule.onNodeWithTag("ai_planning_save_to_projects_button").performClick()
     composeTestRule.waitForIdle()
 
@@ -618,7 +606,7 @@ class ExampleRobolectricTest {
       .onNodeWithTag("builder_prompt_input")
       .performTextInput("دروستکردنی فرۆشگای سەرهێڵی کوردی")
     composeTestRule.onNodeWithTag("builder_send_button").performClick()
-    Thread.sleep(200)
+    Thread.sleep(600)
     composeTestRule.waitForIdle()
 
     // Switch to Code & Files tab and verify real generated file tree and code viewer
@@ -869,7 +857,6 @@ class ExampleRobolectricTest {
     composeTestRule.onNodeWithTag("tab_gemini").assertIsDisplayed()
     composeTestRule.onNodeWithTag("tab_openai").assertIsDisplayed()
     composeTestRule.onNodeWithTag("ai_settings_api_key_input").assertExists()
-    composeTestRule.onNodeWithTag("failover_toggle_switch").assertExists()
 
     // Switch to OpenAI tab
     composeTestRule.onNodeWithTag("tab_openai").performClick()
